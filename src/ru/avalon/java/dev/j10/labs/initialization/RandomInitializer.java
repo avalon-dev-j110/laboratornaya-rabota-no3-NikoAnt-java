@@ -1,5 +1,6 @@
 package ru.avalon.java.dev.j10.labs.initialization;
 
+import java.util.Random;
 import ru.avalon.java.dev.j10.labs.Initializer;
 
 /**
@@ -21,7 +22,14 @@ public class RandomInitializer implements Initializer {
      *
      * @param array массив, подлежащий инициализации
      */
+    @Override
     public void initialize(int[] array) {
+        Random random = new Random();
+        for (int i=0; i< array.length; i++){
+            //элементы массива будут созданы рандомно на интервале от -50 до 50
+            array[i] = ((int)(Math.random()*100)-50);
+        }
+        
         /*
          * TODO(Студент): Реализовать метод initialize класса RandomInitializer
          */
