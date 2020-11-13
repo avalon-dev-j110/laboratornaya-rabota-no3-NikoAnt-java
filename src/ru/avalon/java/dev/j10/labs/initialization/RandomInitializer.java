@@ -38,7 +38,6 @@ public class RandomInitializer implements Initializer {
             //элементы массива будут созданы рандомно на интервале от -50 до 50
             array[i] = (int) (Math.random() * (b-a) + a);
         }
-
         /*
          * TODO(Студент): Реализовать метод initialize класса RandomInitializer
          */
