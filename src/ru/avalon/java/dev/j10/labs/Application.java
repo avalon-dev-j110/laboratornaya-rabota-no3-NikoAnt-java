@@ -70,7 +70,7 @@ public class Application {
         /* 7. Проинициализировать массив последовательностью
          *    случайных чисел в диапазоне от -50 до 50.
          */
-        new RandomInitializer(-50,50).initialize(array);
+        new RandomInitializer(-50, 50).initialize(array);
         System.out.println(ANSI_PURPLE + "Рандомный массив №3 " + Arrays.toString(array));
         System.out.println("");
         /* 8. Отсортировать массив с использованием
