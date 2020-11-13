@@ -23,7 +23,7 @@ public class Application {
     public static final String ANSI_BLUE = "\u001B[34m";//синий
     public static final String ANSI_PURPLE = "\u001B[35m";//
     public static final String ANSI_CYAN = "\u001B[36m";//
-    
+
     public static void main(String[] args) {
         /*
 	     * TODO(Студент): Выполнить действия над массивом чисел
@@ -46,7 +46,7 @@ public class Application {
         /* 3. Проинициализировать массив последовательностью
 	     *    случайных чисел в диапазоне от -50 до 50.
          */
-        new RandomInitializer().initialize(array);
+        new RandomInitializer(-50, 50).initialize(array);
         System.out.println(ANSI_PURPLE + "Рандомный массив №1 " + Arrays.toString(array));
         System.out.println("");
         /* 4. Отсортировать массив с использованием
@@ -58,7 +58,7 @@ public class Application {
         /* 5. Проинициализировать массив последовательностью
          *    случайных чисел в диапазоне от -50 до 50.
          */
-        new RandomInitializer().initialize(array);
+        new RandomInitializer(-50, 50).initialize(array);
         System.out.println(ANSI_PURPLE + "Рандомный массив №2 " + Arrays.toString(array));
         System.out.println("");
         /* 6. Отсортировать массив с использованием
@@ -70,7 +70,7 @@ public class Application {
         /* 7. Проинициализировать массив последовательностью
          *    случайных чисел в диапазоне от -50 до 50.
          */
-        new RandomInitializer().initialize(array);
+        new RandomInitializer(-50,50).initialize(array);
         System.out.println(ANSI_PURPLE + "Рандомный массив №3 " + Arrays.toString(array));
         System.out.println("");
         /* 8. Отсортировать массив с использованием
